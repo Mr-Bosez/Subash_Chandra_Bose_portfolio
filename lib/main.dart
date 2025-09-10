@@ -18,8 +18,16 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
 
-        textTheme: GoogleFonts.icebergTextTheme().apply(
-          fontFamilyFallback: ['NotoColorEmoji']
+        textTheme: GoogleFonts.icebergTextTheme().copyWith(
+          bodyLarge: GoogleFonts.iceberg().copyWith(
+            fontFamilyFallback: const ['NotoColorEmoji'],
+          ),
+          bodyMedium: GoogleFonts.iceberg().copyWith(
+            fontFamilyFallback: const ['NotoColorEmoji'],
+          ),
+          bodySmall: GoogleFonts.iceberg().copyWith(
+            fontFamilyFallback: const ['NotoColorEmoji'],
+          ),
         ), // Replaced asimovianTextTheme with a valid font from Google Fonts
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
