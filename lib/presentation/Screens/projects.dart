@@ -17,7 +17,7 @@ class _ProjectsScreenState extends State<ProjectsScreen> {
   bool _isVisible = false;
 
   final List<ProjectsContainer> projects = [
-    ProjectsContainer(
+    const ProjectsContainer(
       imageUrl: "https://res.cloudinary.com/dezwo04ym/image/upload/v1756891496/combined_1_gf7lth.png",
       projectTitle: 'Modern e-commerce platform for intuitive shopping.',
       projectDescription:
@@ -25,7 +25,7 @@ class _ProjectsScreenState extends State<ProjectsScreen> {
       programs: ["Flutter", "Dart", "Firebase", "Riverpod", "REST API"],
       githubUrl: 'https://github.com/Mr-Bosez/Android_App_Developmet_Intern_NativeSoftTech/tree/2e169903d447c91b128435386ccb5232ef5a41fa/e_commerce',
     ),
-    ProjectsContainer(
+    const ProjectsContainer(
       imageUrl: "https://res.cloudinary.com/dezwo04ym/image/upload/v1756891496/combined_6_ombcn4.png",
       projectTitle: 'Accurate weather forecasts at a glance.',
       projectDescription:
@@ -33,7 +33,7 @@ class _ProjectsScreenState extends State<ProjectsScreen> {
       programs: ["Flutter", "Dart", "Bloc", "REST API", "Google Auth"],
       githubUrl: 'https://github.com/Mr-Bosez/Android_App_Developmet_Intern_NativeSoftTech/tree/2e169903d447c91b128435386ccb5232ef5a41fa/weather_application',
     ),
-    ProjectsContainer(
+    const ProjectsContainer(
       imageUrl: "https://res.cloudinary.com/dezwo04ym/image/upload/v1756891496/combined_4_dtnlg6.png",
       projectTitle: 'Track tasks and boost productivity',
       projectDescription:

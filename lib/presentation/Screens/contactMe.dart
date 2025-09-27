@@ -106,9 +106,9 @@ class _ContactState extends State<ContactScreen> {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Flexible(child: Container(
-          constraints: BoxConstraints(maxWidth: 800),
+          constraints: const BoxConstraints(maxWidth: 800),
             child: contactForm())),
-        SizedBox(width: 20),
+        const SizedBox(width: 20),
         SizedBox(
           width: lottieWidth,
           child: Lottie.network(
@@ -125,7 +125,7 @@ class _ContactState extends State<ContactScreen> {
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
         contactForm(),
-        SizedBox(height: 20),
+        const SizedBox(height: 20),
         SizedBox(
           width: lottieWidth,
           child: Lottie.network(
@@ -144,7 +144,7 @@ class _ContactState extends State<ContactScreen> {
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.circular(16),
-        boxShadow: [
+        boxShadow: const [
           BoxShadow(
             color: Colors.black12,
             blurRadius: 10,
@@ -157,8 +157,8 @@ class _ContactState extends State<ContactScreen> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Center(
-              child: const Text(
+            const Center(
+              child: Text(
                 "Contact Me ✏️ ",
                 style: TextStyle(
                   fontSize: 22,
@@ -262,11 +262,11 @@ class _ContactState extends State<ContactScreen> {
                           width: 400,
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(10),
-                            side: BorderSide(color: AppConstants.secondaryColor, width: 2),
+                            side: const BorderSide(color: AppConstants.secondaryColor, width: 2),
                           ),
                           content: Text(
                             "Error: ${error.toString()}",
-                            style: TextStyle(color: AppConstants.secondaryColor),
+                            style: const TextStyle(color: AppConstants.secondaryColor),
                             textAlign: TextAlign.center,
                           ),
                           backgroundColor: Colors.red,

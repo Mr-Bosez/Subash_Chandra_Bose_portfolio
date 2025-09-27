@@ -31,7 +31,7 @@ class HomeViewScreen extends StatelessWidget {
             height: MediaQuery.of(context).size.height, // ✅ full screen height
             // constraints: const BoxConstraints(minHeight: 600, maxHeight: 700),
             width: double.infinity,
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               color: AppConstants.baseColor,
               border: Border(
                 top: BorderSide(color: AppConstants.tertiaryColor, width: 3),
@@ -107,7 +107,7 @@ class HomeViewScreen extends StatelessWidget {
       crossAxisAlignment:
       isMobile ? CrossAxisAlignment.center : CrossAxisAlignment.start,
       children: [
-        Text("Hi , "),
+        const Text("Hi , "),
         Text(
           "I am Subash Chandra Bose",
           style: TextStyle(
@@ -123,26 +123,26 @@ class HomeViewScreen extends StatelessWidget {
             TypewriterAnimatedText("Flutter Mobile App Developer",
                 cursor: '_',
                 curve: Curves.fastEaseInToSlowEaseOut,
-                speed: Duration(milliseconds: 70),
+                speed: const Duration(milliseconds: 70),
                 textStyle: TextStyle(fontSize: isMobile ? 18 : null)),
             TypewriterAnimatedText("Automation & Workflow Builder",
                 cursor: '_',
                 curve: Curves.fastEaseInToSlowEaseOut,
-                speed: Duration(milliseconds: 70),
+                speed: const Duration(milliseconds: 70),
                 textStyle: TextStyle(fontSize: isMobile ? 18 : null)),
             TypewriterAnimatedText("Python Developer",
                 cursor: '_',
                 curve: Curves.fastEaseInToSlowEaseOut,
-                speed: Duration(milliseconds: 70),
+                speed: const Duration(milliseconds: 70),
                 textStyle: TextStyle(fontSize: isMobile ? 18 : null)),
             TypewriterAnimatedText("AI/ML Enthusiast / Junior AI Developer",
                 cursor: '_',
                 curve: Curves.fastEaseInToSlowEaseOut,
-                speed: Duration(milliseconds: 70),
+                speed: const Duration(milliseconds: 70),
                 textStyle: TextStyle(fontSize: isMobile ? 18 : null)),
           ],
         ),
-        SizedBox(height: 25),
+        const SizedBox(height: 25),
         Row(
           mainAxisAlignment:
           isMobile ? MainAxisAlignment.center : MainAxisAlignment.start,
@@ -150,17 +150,17 @@ class HomeViewScreen extends StatelessWidget {
             HoverIconButton(
                 icon: FontAwesomeIcons.linkedin,
                 onPressed: () => apiCalls.linkedIn(context)),
-            SizedBox(width: 15),
+            const SizedBox(width: 15),
             HoverIconButton(
                 icon: FontAwesomeIcons.github,
                 onPressed: () => apiCalls.gitHub(context)),
-            SizedBox(width: 15),
+            const SizedBox(width: 15),
             HoverIconButton(
                 icon: FontAwesomeIcons.whatsapp,
                 onPressed: () => apiCalls.whatsApp(context)),
           ],
         ),
-        SizedBox(height: 20),
+        const SizedBox(height: 20),
         ValueListenableBuilder<bool>(
           valueListenable: _isHoverNotifier,
           builder: (context, isHover, child) {

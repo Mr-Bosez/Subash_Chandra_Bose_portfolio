@@ -36,6 +36,7 @@ dependencies:
   cached_network_image: ^3.4.1
   shimmer: ^3.0.0
   liquid_loader: ^0.0.9
+  liquid_progress_indicator_v2: ^0.5.0
   visibility_detector: ^0.4.0+2
   build_runner: ^2.4.15
   google_fonts: ^6.3.1

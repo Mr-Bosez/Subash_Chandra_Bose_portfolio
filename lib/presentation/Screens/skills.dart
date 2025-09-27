@@ -39,7 +39,7 @@ class _SkillsState extends State<SkillsScreen> with SingleTickerProviderStateMix
     super.initState();
     _controller = AnimationController(
       vsync: this,
-      duration: Duration(seconds: 10),
+      duration: const Duration(seconds: 10),
     );
   }
 
@@ -52,7 +52,7 @@ class _SkillsState extends State<SkillsScreen> with SingleTickerProviderStateMix
   @override
   Widget build(BuildContext context) {
     return VisibilityDetector(
-      key: Key("Skills-section"),
+      key: const Key("Skills-section"),
       onVisibilityChanged: (visibilityInfo) {
         if (visibilityInfo.visibleFraction > 0.5) {
           if (!_controller.isAnimating && _controller.value == 0.0) {
@@ -61,7 +61,7 @@ class _SkillsState extends State<SkillsScreen> with SingleTickerProviderStateMix
         }
       },
       child: Container(
-        padding: EdgeInsets.all(50),
+        padding: const EdgeInsets.all(50),
         width: double.infinity,
         color: AppConstants.baseColor,
         child: SingleChildScrollView(
@@ -69,7 +69,7 @@ class _SkillsState extends State<SkillsScreen> with SingleTickerProviderStateMix
             children: [
               Text(
                 "Skills & Tools",
-                style: TextStyle(
+                style: const TextStyle(
                   fontSize: 35,
                   fontWeight: FontWeight.bold,
                   color: AppConstants.secondaryColor,
@@ -105,7 +105,7 @@ class _SkillsState extends State<SkillsScreen> with SingleTickerProviderStateMix
             capColor: AppConstants.secondaryColor,
             liquidLevel: progress,
             text: skill['name'],
-            textStyle: TextStyle(
+            textStyle: const TextStyle(
               color: Colors.white,
               fontSize: 20,
               fontWeight: FontWeight.bold,
